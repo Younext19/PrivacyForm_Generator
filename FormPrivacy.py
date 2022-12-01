@@ -6,13 +6,13 @@ import time
 from selenium.webdriver import FirefoxOptions
 
 import random
-app_name_info="Sakura Video Call"
-contact_info="devdams784@gmail.com"
-id_info="nothing"
-app_type_info="Free"
-os_info="Android"
-owner_type_info="Individual"
-developer_name_info="Damso.dev"
+app_name_info="APP_NAME"
+contact_info="MAIL"
+id_info="nothing" #Fixed
+app_type_info="Free" #Fixed
+os_info="Android" # Fixed
+owner_type_info="Individual" #Fixed
+developer_name_info="Developer NAME"
 def generate_privacy_policy(app_name_info,contact_info,id_info,app_type_info,os_info,owner_type_info,developer_name_info):
     
     browser = webdriver.Firefox()
@@ -121,7 +121,7 @@ def generate_privacy_policy(app_name_info,contact_info,id_info,app_type_info,os_
 
     # Write password
     fourteeth=browser.find_element(By.XPATH, deploy_password_input)
-    fourteeth.send_keys("Password123+")
+    fourteeth.send_keys("anyPasswordBro10+")
 
     time.sleep(5)
 
